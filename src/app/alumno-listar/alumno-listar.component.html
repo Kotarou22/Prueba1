@@ -1,0 +1,8 @@
+<div class="container">
+  <section>
+    <app-alumno *ngFor="let item of alumnos"
+                [alumnos]="item"
+                (rutalumno)="escucharRut($event)"></app-alumno>
+  </section>
+</div>
+

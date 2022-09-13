@@ -1,0 +1,14 @@
+<section>
+  <article>
+    <p *ngIf="alumnos.rut ; else noRut">{{ alumnos.rut }}</p>
+    <ng-template #noRut>Rut no registrado. </ng-template>
+    <p *ngIf="alumnos.nombre ; else noNombre">{{ alumnos.nombre | uppercase }}</p>
+    <ng-template #noNombre>Nombre no registrado. </ng-template>
+    <p *ngIf="alumnos.apellido ; else noApellido">{{ alumnos.apellido | lowercase }}</p>
+    <ng-template #noApellido>Apellido no registrado. </ng-template>
+    <p *ngIf="alumnos.edad ; else noEdad">{{ alumnos.edad }}</p>
+    <ng-template #noEdad>Edad no registrada. </ng-template>
+    <p *ngIf="alumnos.seccion ; else noSeccion">{{ alumnos.seccion }}</p>
+    <ng-template #noSeccion>Seccion no registrada. </ng-template>
+  </article>
+</section>

@@ -1,0 +1,5 @@
+<app-formulario-alum (salidaAlumno)="escuchoAlumno($event)"
+></app-formulario-alum>
+<app-alumno-listar [alumnos]="alumnoGuardado"
+                   (posIndex)="eliminarAlumno($event)"
+></app-alumno-listar>
